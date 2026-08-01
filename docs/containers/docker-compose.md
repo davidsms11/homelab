@@ -205,44 +205,6 @@ Stop and remove containers and networks:
 docker compose down
 ```
 
----
-
-## Security
-
-Public Compose examples must not contain:
-
-* Real usernames
-* Internal IP addresses
-* Passwords
-* API keys
-* Access tokens
-* Private domains
-* Personal directory names
-* Real `.env` files
-
-Sensitive values should be stored in an `.env` file that is excluded from Git.
-
-Example:
-
-```yaml
-services:
-  application:
-    environment:
-      APP_USER: ${APP_USER}
-      APP_PASSWORD: ${APP_PASSWORD}
-```
-
-Example `.env.example`:
-
-```text
-APP_USER=<username>
-APP_PASSWORD=<replace-with-secure-password>
-```
-
-The real `.env` file must not be committed.
-
----
-
 ## Related Documentation
 
 * [Containers Overview](README.md)
