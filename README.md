@@ -61,7 +61,7 @@ The infrastructure is designed to provide a practical environment for learning, 
 
 ```mermaid
 flowchart TD
-    Internet[Internet] --> Router[Telstra Router]
+    Internet[Internet] --> Router[ Router]
     Router --> Proxmox[Proxmox VE]
 
     Proxmox --> Debian[Debian VM]
