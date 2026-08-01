@@ -10,7 +10,7 @@ The documentation is organized by topic, making it easy to navigate, maintain an
 
 | Section | Description |
 |---|---|
-| [Documentation Overview](docs/README.md) | Complete documentation index |
+| [Documentation Overview](homelab\README.md) | Complete documentation index |
 | [Hardware](docs/hardware/README.md) | Server specifications, storage and planned upgrades |
 | Network | Network topology, addressing and connectivity |
 | Virtualization | Proxmox configuration and virtual machines |
