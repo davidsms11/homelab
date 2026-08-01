@@ -16,7 +16,7 @@ The documentation is organized by topic, making it easy to navigate, maintain an
 | [Virtualization](/docs/virtualization/README.md) | Proxmox configuration and virtual machines |
 | Containers | Docker architecture and container management |
 | Services | Documentation for deployed services |
-| Storage | Disk layout, mount points and file sharing |
+| [Storage](/docs/storage/README.md) | Disk layout, mount points and file sharing |
 | Security | Remote access, permissions and security practices |
 | Backup | Backup and recovery planning |
 | Troubleshooting | Problems encountered and solutions |
