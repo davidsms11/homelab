@@ -77,4 +77,4 @@ After the hypervisor installation, the Debian 13 virtual machine was created.
 
 See:
 
-- debian-vm.md
+- [Debian VM Setup](/docs/virtualization/debian-vm.md)
