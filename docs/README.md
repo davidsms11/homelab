@@ -13,7 +13,7 @@ The documentation is organized by topic, making it easy to navigate, maintain an
 | [Documentation Overview](/README.md) | Complete documentation index |
 | [Hardware](/docs/hardware/README.md) | Server specifications, storage and planned upgrades |
 | Network | Network topology, addressing and connectivity |
-| Virtualization | Proxmox configuration and virtual machines |
+| [Virtualization](/docs/virtualization/README.md) | Proxmox configuration and virtual machines |
 | Containers | Docker architecture and container management |
 | Services | Documentation for deployed services |
 | Storage | Disk layout, mount points and file sharing |
