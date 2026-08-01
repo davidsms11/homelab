@@ -54,5 +54,5 @@ Proxmox manages the infrastructure, while all applications are deployed inside t
 
 ## Related Documentation
 
-* Proxmox Installation *(coming soon)*
-* Debian VM Setup *(coming soon)*
+- [Proxmox Installation](/docs/virtualization/proxmox-install.md)
+- [Debian VM Setup](/docs/virtualization/debian-vm.md)
