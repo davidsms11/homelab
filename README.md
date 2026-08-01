@@ -70,19 +70,17 @@ flowchart TD
     Debian --> Docker[Docker Engine]
     Debian --> Samba[Samba File Sharing]
     Debian --> Tailscale[Tailscale Remote Access]
+    Debian --> Storage[1.4 TB HDD Storage]
 
     Docker --> Homepage[Homepage Dashboard]
     Docker --> Portainer[Portainer]
     Docker --> Jellyfin[Jellyfin]
     Docker --> Nextcloud[Nextcloud]
 
-    Debian --> Storage[1.4 TB HDD Storage]
-
     Storage --> Jellyfin
     Storage --> Nextcloud
     Storage --> Samba
 ```
-
 
 ##  Services
 
