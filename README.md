@@ -65,12 +65,11 @@ flowchart TD
     Router --> Proxmox[Proxmox VE]
 
     Proxmox --> Debian[Debian VM]
-    Proxmox --> PiHole[Pi-hole LXC]
 
     Debian --> Docker[Docker Engine]
     Debian --> Samba[Samba File Sharing]
     Debian --> Tailscale[Tailscale Remote Access]
-    Debian --> Storage[1.4 TB HDD Storage]
+    Debian --> Storage[1.5 TB HDD Storage]
 
     Docker --> Homepage[Homepage Dashboard]
     Docker --> Portainer[Portainer]

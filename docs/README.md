@@ -8,22 +8,18 @@ The documentation is organized by topic, making it easy to navigate, maintain an
 
 ---
 
-## Documentation Structure
-
-| Section         | Description                                                   |
-| --------------- | ------------------------------------------------------------- |
-| Hardware        | Server specifications and planned hardware upgrades.          |
-| Network         | Network topology, IP addressing and connectivity.             |
-| Virtualization  | Proxmox configuration and virtual machines.                   |
-| Containers      | Docker installation, Docker Compose and container management. |
-| Services        | Documentation for each self-hosted application.               |
-| Storage         | Disk layout, mount points and file sharing.                   |
-| Security        | Security practices and remote access.                         |
-| Backup          | Backup strategy and recovery planning.                        |
-| Troubleshooting | Problems encountered and how they were resolved.              |
-| Roadmap         | Planned improvements and future services.                     |
-
----
+| Section | Description |
+|---|---|
+| [Documentation Overview](docs/README.md) | Complete documentation index |
+| [Hardware](docs/hardware/README.md) | Server specifications, storage and planned upgrades |
+| Network | Network topology, addressing and connectivity |
+| Virtualization | Proxmox configuration and virtual machines |
+| Containers | Docker architecture and container management |
+| Services | Documentation for deployed services |
+| Storage | Disk layout, mount points and file sharing |
+| Security | Remote access, permissions and security practices |
+| Backup | Backup and recovery planning |
+| Troubleshooting | Problems encountered and solutions |
 
 ## Documentation Principles
 
