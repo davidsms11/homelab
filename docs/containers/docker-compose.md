@@ -69,7 +69,7 @@ cd ~/compose-test
 Create a file named:
 
 ```text
-compose.yaml
+nano compose.yaml
 ```
 
 Example:
