@@ -57,28 +57,32 @@ The infrastructure is designed to provide a practical environment for learning, 
 | Container Management | Portainer  |
 
 
-##  Architecture
+## Architecture
 
-Internet
-        │
-        ▼
-Router
-        │
-        ▼
-Proxmox
-        │
- ┌───────────────┐
- │ Debian VM     │
- └───────────────┘
-        │
-      Docker
-        │
- ├────────────── Homepage
- ├────────────── Portainer
- ├────────────── Jellyfin
- ├────────────── Nextcloud
- ├────────────── Samba
- └────────────── Tailscale
+```mermaid
+flowchart TD
+    Internet[Internet] --> Router[Telstra Router]
+    Router --> Proxmox[Proxmox VE]
+
+    Proxmox --> Debian[Debian VM]
+    Proxmox --> PiHole[Pi-hole LXC]
+
+    Debian --> Docker[Docker Engine]
+    Debian --> Samba[Samba File Sharing]
+    Debian --> Tailscale[Tailscale Remote Access]
+
+    Docker --> Homepage[Homepage Dashboard]
+    Docker --> Portainer[Portainer]
+    Docker --> Jellyfin[Jellyfin]
+    Docker --> Nextcloud[Nextcloud]
+
+    Debian --> Storage[1.4 TB HDD Storage]
+
+    Storage --> Jellyfin
+    Storage --> Nextcloud
+    Storage --> Samba
+```
+
 
 ##  Services
 
@@ -86,15 +90,15 @@ The Home Lab currently runs the following self-hosted services.
 
 | Service    | Purpose                                                     | Status    |
 | ---------- | ----------------------------------------------------------- | --------- |
-| Proxmox VE | Virtualization platform hosting the Home Lab infrastructure | ✅ Running |
-| Debian VM  | Main operating system for containerized services            | ✅ Running |
-| Docker     | Container platform used to deploy applications              | ✅ Running |
-| Portainer  | Web interface for Docker container management               | ✅ Running |
-| Homepage   | Central dashboard providing quick access to all services    | ✅ Running |
-| Nextcloud  | Private cloud storage and file synchronization              | ✅ Running |
-| Jellyfin   | Self-hosted media server for personal content               | ✅ Running |
-| Samba      | Local network file sharing                                  | ✅ Running |
-| Tailscale  | Secure remote access to the Home Lab through a private VPN  | ✅ Running |
+| Proxmox VE | Virtualization platform hosting the Home Lab infrastructure |  Running |
+| Debian VM  | Main operating system for containerized services            |  Running |
+| Docker     | Container platform used to deploy applications              |  Running |
+| Portainer  | Web interface for Docker container management               |  Running |
+| Homepage   | Central dashboard providing quick access to all services    |  Running |
+| Nextcloud  | Private cloud storage and file synchronization              |  Running |
+| Jellyfin   | Self-hosted media server for personal content               |  Running |
+| Samba      | Local network file sharing                                  |  Running |
+| Tailscale  | Secure remote access to the Home Lab through a private VPN  |  Running |
 
 
 
@@ -118,7 +122,7 @@ The complete documentation for this Home Lab is organized into dedicated section
 Each section contains detailed documentation, configuration notes and lessons learned throughout the project.
 
 
-## 🚀 Roadmap
+##  Roadmap
 
 * [ ] Grafana
 * [ ] Prometheus
